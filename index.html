@@ -1,11 +1,235 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfólio</title>
+    <title>Wallisson Elizeu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Wallisson Elizeu</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#work" class="nav-link">Trabalhos</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">Claro</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-intro">
+                    <p class="hero-greeting">Olá, seja bem-vindo</p>
+                    <h1 class="hero-name">Meu nome é <span class="highlight">Wallisson Elizeu</span></h1>
+                    <p class="hero-role">Desenvolvedor Full Stack | Mobile
+                        
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn btn-primary">Explorar Meus Trabalhos</a>
+                        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-avatar-container">
+                    <div class="hero-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="avatar-info">
+                        <p class="info-item"><span class="info-label">Experiência:</span> 1+ ano</p>
+                        <p class="info-item"><span class="info-label">Tecnologias:</span> 20+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trabalhos em Destaque</h2>
+                <p class="section-description">Projetos recentes e trabalhos profissionais</p>
+            </div>
+
+            <div class="work-grid">
+                <article class="work-card">
+                    <div class="work-number">01</div>
+                    <h3 class="work-title">Projeto Um</h3>
+                    <p class="work-description">
+                        Uma aplicação web moderna construída com React e Node.js, apresentando sincronização de dados em tempo real e autenticação de usuário.
+                    </p>
+                    <div class="work-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <a href="#" class="work-link">Ver Projeto</a>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-number">02</div>
+                    <h3 class="work-title">Projeto Dois</h3>
+                    <p class="work-description">
+                        Plataforma de e-commerce com filtros avançados, integração de pagamento e dashboard administrativo para gerenciamento de inventário.
+                    </p>
+                    <div class="work-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                    <a href="#" class="work-link">Ver Projeto</a>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-number">03</div>
+                    <h3 class="work-title">Projeto Três</h3>
+                    <p class="work-description">
+                        Painel de análises fornecendo insights em tempo real com visualização de dados, relatórios personalizados e integração de API.
+                    </p>
+                    <div class="work-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">D3.js</span>
+                    </div>
+                    <a href="#" class="work-link">Ver Projeto</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="about-text">
+                        Com mais de 1 ano de experiência em desenvolvimento web, trabalhei com startups e empresas consolidadas 
+                        para construir aplicações escaláveis e amigáveis. Sou proficiente em tecnologias frontend e backend, 
+                        com forte foco em código limpo e melhores práticas.
+                    </p>
+                    <p class="about-text">
+                        Além de desenvolvimento web, também sou desenvolvedor de aplicativos mobile, utilizando tecnologias como React Native e Flutter. 
+                        Tenho experiência em criar soluções multiplataforma que funcionam perfeitamente em iOS e Android.
+                    </p>
+                    <p class="about-text">
+                        Quando não estou codificando, você pode me encontrar aprendendo novas tecnologias, contribuindo para open source ou explorando 
+                        as últimas tendências de desenvolvimento web e mobile.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">Habilidades Principais</h3>
+                    <div class="skills-categories">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-list">
+                                <span><i class="fab fa-react"></i> React</span>
+                                <span><i class="fab fa-js"></i> TypeScript</span>
+                                <span><i class="fab fa-css3"></i> CSS3</span>
+                                <span><i class="fab fa-html5"></i> HTML5</span>
+                                <span><i class="fab fa-js-square"></i> JavaScript</span>
+                                <span><i class="fab fa-react"></i> Next.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-list">
+                                <span><i class="fab fa-node-js"></i> Node.js</span>
+                                <span><i class="fab fa-java"></i> Java</span>
+                                <span><i class="fab fa-node"></i> Express</span>
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fas fa-code-branch"></i> REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Banco de Dados</h4>
+                            <div class="skill-list">
+                                <span><i class="fas fa-leaf"></i> MongoDB</span>
+                                <span><i class="fas fa-database"></i> MySQL</span>
+                                <span><i class="fas fa-database"></i> SQLite</span>
+                                <span><i class="fas fa-database"></i> PostgreSQL</span>
+                                <span><i class="fab fa-google"></i> Firebase</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Mobile & Apps</h4>
+                            <div class="skill-list">
+                                <span><i class="fab fa-react"></i> React Native</span>
+                                <span><i class="fab fa-google"></i> Flutter</span>
+                                <span><i class="fas fa-code"></i> Swift</span>
+                                <span><i class="fas fa-code"></i> Kotlin</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Ferramentas</h4>
+                            <div class="skill-list">
+                                <span><i class="fab fa-git"></i> Git</span>
+                                <span><i class="fab fa-docker"></i> Docker</span>
+                                <span><i class="fab fa-aws"></i> AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+                    <p class="contact-description">
+                        Estou sempre interessado em ouvir sobre novos projetos e oportunidades. 
+                        Sinta-se livre para entrar em contato se quiser colaborar.
+                    </p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Conecte-se Comigo</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/wzinn1314" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/wallisson-elizeu-6a36b4412/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Wallissondev" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:wallisson.devv@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Wallisson Elizeu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
