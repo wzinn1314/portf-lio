@@ -15,7 +15,7 @@ themeToggle.addEventListener('click', () => {
     htmlElement.classList.toggle('dark-theme');
     const isDark = htmlElement.classList.contains('dark-theme');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    themeToggle.textContent = isDark ? 'Escuro' : 'Claro';
+    themeToggle.textContent = isDark ? 'Claro' : 'Escuro';
 });
 
 
@@ -64,21 +64,6 @@ navLinks.forEach(link => {
 });
 
 
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const name = contactForm.querySelector('input[type="text"]').value;
-        
-        
-        alert(`Mensagem enviada com sucesso! Entraremos em contato em breve, ${name}.`);
-        contactForm.reset();
-    });
-}
-
-
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -90,6 +75,54 @@ document.querySelectorAll('.btn').forEach(btn => {
             }
         }
     });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const codeElement = document.getElementById('typed-code');
+    const langButtons = document.querySelectorAll('.lang-btn');
+    if (!codeElement || langButtons.length === 0) return;
+
+    const snippets = {
+          html: `<div>\n  <h1>Transforme cliques em clientes.</h1>\n  <p>Design, performance e código que convertem.</p>\n</div>`,
+          java: `public class Pitch {\n  public static void main(String[] args) {\n    System.out.println("Código estratégico. Resultados mensuráveis.");\n    System.out.println("Vamos escalar sua ideia até o próximo nível.");\n  }\n}`,
+          python: `def main():\n    print("Do protótipo ao produto vencedor")\n    print("Soluções robustas com UX que encanta")\n\nif __name__ == "__main__":\n    main()`,
+            node: `const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.end('<h1>Wallisson Elizeu</h1><p>Código que converte visitas em clientes.</p>');\n});\n\nserver.listen(3000, () => console.log('Servidor rodando em http://localhost:3000'));`,
+          react: `import React from "react";\n\nfunction App() {\n  return (\n    <div>\n      <h1>Produtos digitais que as pessoas adoram usar.</h1>\n      <p>Design + Código = Experiência memorável.</p>\n    </div>\n  );\n}\n\nexport default App;`
+    };
+
+    let typingTimeout = null;
+    const typingInterval = 40;
+
+    const typeCode = (text) => {
+        let index = 0;
+        codeElement.textContent = '';
+
+        const typeNext = () => {
+            codeElement.textContent = text.slice(0, index);
+            index += 1;
+            if (index <= text.length) {
+                typingTimeout = setTimeout(typeNext, typingInterval);
+            }
+        };
+
+        clearTimeout(typingTimeout);
+        typingTimeout = setTimeout(typeNext, 100);
+    };
+
+    const setLanguage = (lang) => {
+        langButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        typeCode(snippets[lang] || snippets.html);
+    };
+
+    langButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            setLanguage(button.dataset.lang);
+        });
+    });
+
+    setLanguage('html');
 });
 
 const observer = new IntersectionObserver((entries) => {

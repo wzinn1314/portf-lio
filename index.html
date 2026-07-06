@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallisson Elizeu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="assets/logo.png"
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,9 +32,7 @@
                 <div class="hero-intro">
                     <p class="hero-greeting">Olá, seja bem-vindo</p>
                     <h1 class="hero-name">Meu nome é <span class="highlight">Wallisson Elizeu</span></h1>
-                    <p class="hero-role">Desenvolvedor Full Stack | Mobile
-                        
-                    </p>
+                    <p class="hero-role">Desenvolvedor Full Stack | Mobile</p>
                     <div class="hero-cta">
                         <a href="#work" class="btn btn-primary">Explorar Meus Trabalhos</a>
                         <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
@@ -44,9 +42,22 @@
                     <div class="hero-avatar">
                         <i class="fas fa-user"></i>
                     </div>
-                    <div class="avatar-info">
-                        <p class="info-item"><span class="info-label">Experiência:</span> 1+ ano</p>
-                        <p class="info-item"><span class="info-label">Tecnologias:</span> 20+</p>
+                    <div class="mac-window">
+                        <div class="mac-window-header">
+                            <div class="mac-window-dots">
+                                <span class="mac-dot red"></span>
+                                <span class="mac-dot yellow"></span>
+                                <span class="mac-dot green"></span>
+                            </div>
+                            <div class="language-buttons">
+                                <button type="button" class="lang-btn active" data-lang="html">HTML</button>
+                                <button type="button" class="lang-btn" data-lang="java">Java</button>
+                                <button type="button" class="lang-btn" data-lang="python">Python</button>
+                                <button type="button" class="lang-btn" data-lang="node">Node.js</button>
+                                <button type="button" class="lang-btn" data-lang="react">React</button>
+                            </div>
+                        </div>
+                        <pre class="hero-code-block"><code id="typed-code"></code></pre>
                     </div>
                 </div>
             </div>
@@ -197,21 +208,23 @@
                     </p>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formsubmit.co/wallisson.devv@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="form-group">
-                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="text" name="name" placeholder="Seu Nome" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Seu Email" required>
+                        <input type="email" name="email" placeholder="Seu Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
 
                 <div class="contact-info">
-                    <h3>Conecte-se Comigo</h3>
+                    <h3>Outros meios de Contato</h3>
                     <div class="social-links">
                         <a href="https://github.com/wzinn1314" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/wallisson-elizeu-6a36b4412/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
