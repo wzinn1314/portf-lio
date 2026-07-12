@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const snippets = {
           html: `<div>\n  <h1>Transforme cliques em clientes.</h1>\n  <p>Design, performance e código que convertem.</p>\n</div>`,
-          java: `public class Pitch {\n  public static void main(String[] args) {\n    System.out.println("Código estratégico. Resultados mensuráveis.");\n    System.out.println("Vamos escalar sua ideia até o próximo nível.");\n  }\n}`,
+          java: `public class Pitch {\n  public static void main(String[] args) {\n    System.out.println("Código estratégico. Resultados mensuráveis.");\n}\n}`,
           python: `def main():\n    print("Do protótipo ao produto vencedor")\n    print("Soluções robustas com UX que encanta")\n\nif __name__ == "__main__":\n    main()`,
             node: `const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.end('<h1>Wallisson Elizeu</h1><p>Código que converte visitas em clientes.</p>');\n});\n\nserver.listen(3000, () => console.log('Servidor rodando em http://localhost:3000'));`,
           react: `import React from "react";\n\nfunction App() {\n  return (\n    <div>\n      <h1>Produtos digitais que as pessoas adoram usar.</h1>\n      <p>Design + Código = Experiência memorável.</p>\n    </div>\n  );\n}\n\nexport default App;`
@@ -132,7 +132,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.style.transform = 'translateY(0)';
         }
     });
-}, observerOptions);
+});
 
 document.querySelectorAll('.project-card, .skill').forEach(el => {
     el.style.opacity = '0';
