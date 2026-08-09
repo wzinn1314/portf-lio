@@ -292,6 +292,70 @@ a {
     background: #00ca4e;
 }
 
+.work-card {
+position: relative;
+overflow: hidden;
+}
+
+.work-card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: var(--accent);
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.3s ease;
+}
+
+.work-card:hover::before {
+transform: scaleX(1);
+}
+
+.work-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.work-card:hover .work-image img {
+    transform: scale(1.04);
+}
+
+.work-actions {
+display: flex;
+align-items: center;
+gap: 24px;
+flex-wrap: wrap;
+margin-top: auto;
+}
+
+.work-actions .work-link {
+text-decoration: none;
+display: inline-flex;
+align-items: center;
+gap: 6px;
+}
+
+.work-link-disabled {
+opacity: 0.45;
+cursor: default;
+text-decoration: none;
+}
+
 .hero-code-block {
     margin: 0;
     padding: 20px 22px;
@@ -829,6 +893,17 @@ a {
     .hero-name {
         font-size: clamp(2rem, 12vw, 2.4rem);
     }
+   
+
+.work-actions {
+    gap: 16px;
+}
+
+.hero-description {
+    font-size: 0.95rem;
+}
+
+
 
     .hero-avatar {
         width: 180px;

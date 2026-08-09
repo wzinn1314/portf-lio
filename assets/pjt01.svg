@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="redGradientAvatar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E50914" />
+      <stop offset="100%" stop-color="#990000" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo escuro com a cor #252B35 -->
+  <rect width="200" height="200" rx="40" fill="#252B35"/>
+
+  <!-- Ícone da Caixa Centralizado -->
+  <g transform="translate(50, 45)">
+    <path d="M 50 20 L 85 40 L 85 80 L 50 100 L 15 80 L 15 40 Z" fill="none" stroke="url(#redGradientAvatar)" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 15 40 L 50 60 L 85 40" fill="none" stroke="url(#redGradientAvatar)" stroke-width="7"/>
+    <path d="M 50 60 L 50 100" fill="none" stroke="url(#redGradientAvatar)" stroke-width="7"/>
+    
+    <!-- Vapor Neon Vermelho e Branco -->
+    <path d="M 35 20 C 25 5, 45 -5, 35 -15" fill="none" stroke="#E50914" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 65 20 C 55 5, 75 -5, 65 -15" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
