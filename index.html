@@ -1,544 +1,836 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallisson Elizeu</title>
-    <link rel="icon" href="assets/logo.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Wallisson Elizeu</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Início</a></li>
-                <li><a href="#work" class="nav-link">Trabalhos</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle">Claro</button>
-        </div>
-    </nav>
 
-  <!-- Hero Section -->
+
+<title>Wallisson Elizeu | Desenvolvedor Full Stack</title>
+
+<link rel="icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="styles.css">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+>
+
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+====================================================== -->
+
+<nav class="navbar">
+    <div class="container">
+
+        <div class="nav-brand">
+            Wallisson Elizeu
+        </div>
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="#home" class="nav-link active">
+                    Início
+                </a>
+            </li>
+
+            <li>
+                <a href="#work" class="nav-link">
+                    Trabalhos
+                </a>
+            </li>
+
+            <li>
+                <a href="#about" class="nav-link">
+                    Sobre
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-link">
+                    Contato
+                </a>
+            </li>
+
+        </ul>
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+        >
+            Claro
+        </button>
+
+    </div>
+</nav>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
 
 <header id="home" class="hero">
+
     <div class="container">
+
         <div class="hero-wrapper">
 
+            <div class="hero-intro">
 
-        <div class="hero-intro">
-            <p class="hero-greeting">Olá, seja bem-vindo 👋</p>
+                <p class="hero-greeting">
+                    Olá, seja bem-vindo 👋
+                </p>
 
-            <h1 class="hero-name">
-                Meu nome é <span class="highlight">Wallisson Elizeu</span>
-            </h1>
+                <h1 class="hero-name">
+                    Meu nome é
+                    <span class="highlight">
+                        Wallisson Elizeu
+                    </span>
+                </h1>
 
-            <p class="hero-role">
-                Desenvolvedor Full Stack | Mobile
-            </p>
+                <p class="hero-role">
+                    Desenvolvedor Full Stack | Web | Mobile
+                </p>
 
-            <p class="hero-description">
-                Desenvolvedor apaixonado por tecnologia, criação de aplicações
-                modernas e soluções que transformam ideias em experiências digitais.
-            </p>
+                <p class="hero-description">
+                    Desenvolvedor apaixonado por tecnologia, criação de
+                    aplicações modernas, APIs e experiências digitais.
+                    Transformo ideias em sistemas funcionais, responsivos
+                    e preparados para diferentes dispositivos.
+                </p>
 
-            <div class="hero-cta">
-                <a href="#work" class="btn btn-primary">
-                    Explorar Meus Projetos
-                </a>
+                <div class="hero-cta">
 
-                <a href="#contact" class="btn btn-secondary">
-                    Entre em Contato
-                </a>
-            </div>
-        </div>
+                    <a
+                        href="#work"
+                        class="btn btn-primary"
+                    >
+                        Explorar Meus Projetos
+                    </a>
 
-        <div class="hero-avatar-container">
-
-            <div class="hero-avatar">
-                <i class="fas fa-code"></i>
-            </div>
-
-            <div class="mac-window">
-
-                <div class="mac-window-header">
-
-                    <div class="mac-window-dots">
-                        <span class="mac-dot red"></span>
-                        <span class="mac-dot yellow"></span>
-                        <span class="mac-dot green"></span>
-                    </div>
-
-                    <div class="language-buttons">
-                        <button type="button" class="lang-btn active" data-lang="html">
-                            HTML
-                        </button>
-
-                        <button type="button" class="lang-btn" data-lang="java">
-                            Java
-                        </button>
-
-                        <button type="button" class="lang-btn" data-lang="python">
-                            Python
-                        </button>
-
-                        <button type="button" class="lang-btn" data-lang="node">
-                            Node.js
-                        </button>
-
-                        <button type="button" class="lang-btn" data-lang="react">
-                            React
-                        </button>
-                    </div>
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary"
+                    >
+                        Entre em Contato
+                    </a>
 
                 </div>
 
-                <pre class="hero-code-block"><code id="typed-code"></code></pre>
+            </div>
+
+
+            <div class="hero-avatar-container">
+
+                <div class="hero-avatar">
+                    <i class="fas fa-code"></i>
+                </div>
+
+
+                <div class="mac-window">
+
+                    <div class="mac-window-header">
+
+                        <div class="mac-window-dots">
+
+                            <span class="mac-dot red"></span>
+                            <span class="mac-dot yellow"></span>
+                            <span class="mac-dot green"></span>
+
+                        </div>
+
+
+                        <div class="language-buttons">
+
+                            <button
+                                type="button"
+                                class="lang-btn active"
+                                data-lang="html"
+                            >
+                                HTML
+                            </button>
+
+                            <button
+                                type="button"
+                                class="lang-btn"
+                                data-lang="java"
+                            >
+                                Java
+                            </button>
+
+                            <button
+                                type="button"
+                                class="lang-btn"
+                                data-lang="python"
+                            >
+                                Python
+                            </button>
+
+                            <button
+                                type="button"
+                                class="lang-btn"
+                                data-lang="node"
+                            >
+                                Node.js
+                            </button>
+
+                            <button
+                                type="button"
+                                class="lang-btn"
+                                data-lang="react"
+                            >
+                                React
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <pre class="hero-code-block"><code id="typed-code"></code></pre>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
-</div>
-
 
 </header>
 
-<!-- Projects Section -->
+
+<!-- =====================================================
+     PROJECTS
+====================================================== -->
 
 <section id="work" class="work">
 
+    <div class="container">
 
-<div class="container">
+        <div class="section-header">
 
-    <div class="section-header">
+            <h2 class="section-title">
+                Projetos em Destaque
+            </h2>
 
-        <h2 class="section-title">
-            Projetos em Destaque
-        </h2>
-
-        <p class="section-description">
-            Projetos que desenvolvi para colocar em prática minhas
-            habilidades em desenvolvimento web, APIs e interfaces modernas.
-        </p>
-
-    </div>
-
-
-    <div class="work-grid">
-
-
-        <!-- PROJECT 01 -->
-        <article class="work-card">
-
-            <div class="work-number">
-                  <img
-        src="assets/pjt01.svg"
-        alt="Preview do projeto Stream Box"
-    >
-            </div>
-
-            <h3 class="work-title">
-                Stream Box
-            </h3>
-
-            <p class="work-description">
-                Plataforma de streaming desenvolvida com React e TypeScript,
-                integrada à API do TMDB para busca e exibição de filmes e séries.
-                O projeto possui catálogo de títulos, pesquisa, detalhes dos filmes,
-                trailers e interface responsiva inspirada em plataformas modernas
-                de streaming.
+            <p class="section-description">
+                Projetos desenvolvidos para aplicar conhecimentos em
+                desenvolvimento frontend, backend, APIs, streaming,
+                integração de serviços e interfaces responsivas.
             </p>
 
-            <div class="work-tags">
-
-                <span class="tag">
-                    React
-                </span>
-
-                <span class="tag">
-                    TypeScript
-                </span>
-
-                <span class="tag">
-                    Vite
-                </span>
-
-                <span class="tag">
-                    TMDB API
-                </span>
-
-                <span class="tag">
-                    Vercel
-                </span>
-
-            </div>
-
-            <div class="work-actions">
-
-                <a
-                    href="https://stream-box-ecru.vercel.app/"
-                    class="work-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Demo →
-                </a>
-
-                <a
-                    href="https://github.com/wzinn1314/StreamBox"
-                    class="work-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-
-       <!-- PROJECT 02 -->
-       <article class="work-card">
-
-        <div class="work-number">
-            <img
-                src="assets/pjt02.svg"
-                alt="Preview do projeto ClimaPulse"
-            >
         </div>
 
-        <h3 class="work-title">
-            ClimaPulse
-        </h3>
 
-        <p class="work-description">
-            Dashboard meteorológico interativo em tempo real desenvolvido com
-            React e TypeScript com integração à api do OpenWeather, integrado com Leaflet.
-            O projeto oferece geolocalização automática, navegação por mapa
-            e busca por cidades, estados e países com exibição detalhada de
-            métricas climáticas e bandeiras dinâmicas.
-        </p>
-
-        <div class="work-tags">
-
-            <span class="tag">
-                React
-            </span>
-
-            <span class="tag">
-                TypeScript
-            </span>
-
-            <span class="tag">
-                Vite
-            </span>
-
-            <span class="tag">
-                Leaflet
-            </span>
-
-            <span class="tag">
-                OpenWeather API
-            </span>
-
-            <span class="tag">
-                Vercel
-            </span>
-
-        </div>
-
-        <div class="work-actions">
-
-            <a
-                href="https://climapulse.vercel.app/"
-                class="work-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Demo →
-            </a>
-
-            <a
-                href="https://github.com/wzinn1314/ClimaPulse"
-                class="work-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub →
-            </a>
-
-        </div>
-
-    </article>
+        <div class="work-grid">
 
 
-        <!-- PROJECT 03 -->
-        <article class="work-card">
+            <!-- =================================================
+                 PROJECT 01 - STREAM BOX
+            ================================================== -->
 
-            <div class="work-number">
-                03
-            </div>
+            <article class="work-card">
 
-            <h3 class="work-title">
-                Em desenvolvimento
-            </h3>
+                <div class="work-number">
 
-            <p class="work-description">
-                Projeto futuro que será adicionado ao portfólio assim
-                que estiver disponível para demonstração.
-            </p>
+                    <img
+                        src="assets/pjt01.svg"
+                        alt="Preview do projeto Stream Box"
+                    >
 
-            <div class="work-tags">
+                </div>
 
-                <span class="tag">
+
+                <h3 class="work-title">
+                    Stream Box
+                </h3>
+
+
+                <p class="work-description">
+
+                    Plataforma de entretenimento desenvolvida com
+                    React e TypeScript, integrada à API do TMDB para
+                    descoberta e exibição de filmes e séries.
+
+                    <br><br>
+
+                    O projeto possui catálogo de conteúdos, pesquisa,
+                    categorias, página de detalhes, trailers,
+                    interface responsiva e uma área de TV ao vivo
+                    utilizando fontes públicas/licenciadas de
+                    transmissão compatíveis com HLS.
+
+                    <br><br>
+
+                    Também foram implementados player de vídeo,
+                    seleção de canais, categorias de conteúdo,
+                    notícias, entretenimento e esportes, além de
+                    adaptação da interface para celular, tablet e
+                    desktop.
+
+                </p>
+
+
+                <div class="work-tags">
+
+                    <span class="tag">
+                        React
+                    </span>
+
+                    <span class="tag">
+                        TypeScript
+                    </span>
+
+                    <span class="tag">
+                        Vite
+                    </span>
+
+                    <span class="tag">
+                        TMDB API
+                    </span>
+
+                    <span class="tag">
+                        HLS
+                    </span>
+
+                    <span class="tag">
+                        hls.js
+                    </span>
+
+                    <span class="tag">
+                        REST API
+                    </span>
+
+                    <span class="tag">
+                        Responsive Design
+                    </span>
+
+                    <span class="tag">
+                        Vercel
+                    </span>
+
+                </div>
+
+
+                <div class="work-actions">
+
+                    <a
+                        href="https://stream-box-ecru.vercel.app/"
+                        class="work-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Demo →
+                    </a>
+
+
+                    <a
+                        href="https://github.com/wzinn1314/StreamBox"
+                        class="work-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 PROJECT 02 - CLIMAPULSE
+            ================================================== -->
+
+            <article class="work-card">
+
+                <div class="work-number">
+
+                    <img
+                        src="assets/pjt02.svg"
+                        alt="Preview do projeto ClimaPulse"
+                    >
+
+                </div>
+
+
+                <h3 class="work-title">
+                    ClimaPulse
+                </h3>
+
+
+                <p class="work-description">
+
+                    Dashboard meteorológico interativo desenvolvido
+                    com React e TypeScript.
+
+                    <br><br>
+
+                    A aplicação utiliza a API do OpenWeather para
+                    apresentar informações climáticas em tempo real,
+                    além de integração com Leaflet para visualização
+                    geográfica.
+
+                    <br><br>
+
+                    O sistema possui geolocalização automática,
+                    pesquisa de cidades, estados e países, mapas
+                    interativos, métricas climáticas e informações
+                    dinâmicas de localização.
+
+                </p>
+
+
+                <div class="work-tags">
+
+                    <span class="tag">
+                        React
+                    </span>
+
+                    <span class="tag">
+                        TypeScript
+                    </span>
+
+                    <span class="tag">
+                        Vite
+                    </span>
+
+                    <span class="tag">
+                        Leaflet
+                    </span>
+
+                    <span class="tag">
+                        OpenWeather API
+                    </span>
+
+                    <span class="tag">
+                        REST API
+                    </span>
+
+                    <span class="tag">
+                        Vercel
+                    </span>
+
+                </div>
+
+
+                <div class="work-actions">
+
+                    <a
+                        href="https://climapulse.vercel.app/"
+                        class="work-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Demo →
+                    </a>
+
+
+                    <a
+                        href="https://github.com/wzinn1314/ClimaPulse"
+                        class="work-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 PROJECT 03
+            ================================================== -->
+
+            <article class="work-card">
+
+                <div class="work-number">
+                    03
+                </div>
+
+
+                <h3 class="work-title">
+                    Próximo Projeto
+                </h3>
+
+
+                <p class="work-description">
+
+                    Novo projeto em desenvolvimento.
+
+                    <br><br>
+
+                    Em breve será adicionada uma nova aplicação
+                    desenvolvida para ampliar meu portfólio e
+                    demonstrar novas tecnologias e soluções.
+
+                </p>
+
+
+                <div class="work-tags">
+
+                    <span class="tag">
+                        Em desenvolvimento
+                    </span>
+
+                    <span class="tag">
+                        Full Stack
+                    </span>
+
+                </div>
+
+
+                <span class="work-link work-link-disabled">
                     Em breve
                 </span>
 
-                <span class="tag">
-                    Desenvolvimento
-                </span>
+            </article>
 
-            </div>
 
-            <span class="work-link work-link-disabled">
-                Em breve
-            </span>
-
-        </article>
+        </div>
 
     </div>
 
-</div>
-
-
 </section>
 
-<!-- About Section -->
+
+<!-- =====================================================
+     ABOUT
+====================================================== -->
 
 <section id="about" class="about">
 
+    <div class="container">
 
-<div class="container">
-
-    <div class="about-wrapper">
-
-
-        <div class="about-content">
-
-            <h2 class="section-title">
-                Sobre Mim
-            </h2>
-
-            <p class="about-text">
-                Sou Wallisson Elizeu, desenvolvedor Full Stack e Mobile,
-                apaixonado por tecnologia e pelo desenvolvimento de soluções
-                digitais modernas.
-            </p>
-
-            <p class="about-text">
-                Tenho interesse em desenvolvimento frontend, backend,
-                APIs, bancos de dados e aplicações mobile. Gosto de transformar
-                ideias em projetos funcionais, com interfaces intuitivas,
-                código organizado e foco na experiência do usuário.
-            </p>
-
-            <p class="about-text">
-                Estou constantemente estudando novas tecnologias e buscando
-                evoluir minhas habilidades através de projetos práticos,
-                desafios de programação e desenvolvimento de aplicações reais.
-            </p>
-
-        </div>
+        <div class="about-wrapper">
 
 
-        <div class="skills-section">
+            <div class="about-content">
 
-            <h3 class="skills-title">
-                Habilidades Principais
-            </h3>
-
-
-            <div class="skills-categories">
+                <h2 class="section-title">
+                    Sobre Mim
+                </h2>
 
 
-                <!-- Frontend -->
-                <div class="skill-category">
+                <p class="about-text">
 
-                    <h4>
-                        Frontend
-                    </h4>
+                    Sou Wallisson Elizeu, desenvolvedor Full Stack
+                    com foco em desenvolvimento web e aplicações
+                    modernas.
 
-                    <div class="skill-list">
-
-                        <span>
-                            <i class="fab fa-react"></i>
-                            React
-                        </span>
-
-                        <span>
-                            <i class="fab fa-js"></i>
-                            TypeScript
-                        </span>
-
-                        <span>
-                            <i class="fab fa-js"></i>
-                            JavaScript
-                        </span>
-
-                        <span>
-                            <i class="fab fa-html5"></i>
-                            HTML5
-                        </span>
-
-                        <span>
-                            <i class="fab fa-css3"></i>
-                            CSS3
-                        </span>
-
-                    </div>
-
-                </div>
+                </p>
 
 
-                <!-- Backend -->
-                <div class="skill-category">
+                <p class="about-text">
 
-                    <h4>
-                        Backend
-                    </h4>
+                    Tenho experiência prática com desenvolvimento
+                    frontend utilizando React, TypeScript,
+                    JavaScript, HTML e CSS, além de desenvolvimento
+                    backend utilizando Node.js, Express e APIs REST.
 
-                    <div class="skill-list">
-
-                        <span>
-                            <i class="fab fa-node-js"></i>
-                            Node.js
-                        </span>
-
-                        <span>
-                            <i class="fas fa-server"></i>
-                            Express
-                        </span>
-
-                        <span>
-                            <i class="fab fa-java"></i>
-                            Java
-                        </span>
-
-                        <span>
-                            <i class="fab fa-python"></i>
-                            Python
-                        </span>
-
-                        <span>
-                            <i class="fas fa-code"></i>
-                            REST APIs
-                        </span>
-
-                    </div>
-
-                </div>
+                </p>
 
 
-                <!-- Database -->
-                <div class="skill-category">
+                <p class="about-text">
 
-                    <h4>
-                        Banco de Dados
-                    </h4>
+                    Nos meus projetos, trabalho com integração de
+                    APIs externas, consumo e tratamento de dados,
+                    autenticação, bancos de dados, mapas,
+                    geolocalização, players de vídeo e aplicações
+                    responsivas.
 
-                    <div class="skill-list">
+                </p>
 
-                        <span>
-                            <i class="fas fa-database"></i>
-                            MySQL
-                        </span>
 
-                        <span>
-                            <i class="fas fa-database"></i>
-                            SQLite
-                        </span>
+                <p class="about-text">
 
-                        <span>
-                            <i class="fas fa-database"></i>
-                            PostgreSQL
-                        </span>
+                    No Stream Box, por exemplo, trabalhei com
+                    integração da API do TMDB, organização de
+                    conteúdos, pesquisa, categorias, reprodução de
+                    vídeo através de HLS e desenvolvimento de uma
+                    experiência de TV ao vivo responsiva.
 
-                        <span>
-                            <i class="fas fa-leaf"></i>
-                            MongoDB
-                        </span>
+                </p>
+
+
+                <p class="about-text">
+
+                    Estou constantemente estudando novas tecnologias
+                    e desenvolvendo projetos práticos para aprimorar
+                    minhas habilidades e construir soluções cada vez
+                    mais completas.
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 SKILLS
+            ================================================== -->
+
+            <div class="skills-section">
+
+                <h3 class="skills-title">
+                    Habilidades Principais
+                </h3>
+
+
+                <div class="skills-categories">
+
+
+                    <!-- FRONTEND -->
+
+                    <div class="skill-category">
+
+                        <h4>
+                            Frontend
+                        </h4>
+
+
+                        <div class="skill-list">
+
+                            <span>
+                                <i class="fab fa-react"></i>
+                                React
+                            </span>
+
+                            <span>
+                                <i class="fas fa-code"></i>
+                                TypeScript
+                            </span>
+
+                            <span>
+                                <i class="fab fa-js"></i>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                <i class="fab fa-html5"></i>
+                                HTML5
+                            </span>
+
+                            <span>
+                                <i class="fab fa-css3-alt"></i>
+                                CSS3
+                            </span>
+
+                            <span>
+                                <i class="fas fa-mobile-screen"></i>
+                                Responsive Design
+                            </span>
+
+                        </div>
 
                     </div>
 
-                </div>
+
+                    <!-- BACKEND -->
+
+                    <div class="skill-category">
+
+                        <h4>
+                            Backend
+                        </h4>
 
 
-                <!-- Mobile -->
-                <div class="skill-category">
+                        <div class="skill-list">
 
-                    <h4>
-                        Mobile
-                    </h4>
+                            <span>
+                                <i class="fab fa-node-js"></i>
+                                Node.js
+                            </span>
 
-                    <div class="skill-list">
+                            <span>
+                                <i class="fas fa-server"></i>
+                                Express
+                            </span>
 
-                        <span>
-                            <i class="fab fa-react"></i>
-                            React Native
-                        </span>
+                            <span>
+                                <i class="fab fa-java"></i>
+                                Java
+                            </span>
 
-                        <span>
-                            <i class="fas fa-mobile-alt"></i>
-                            Desenvolvimento Mobile
-                        </span>
+                            <span>
+                                <i class="fab fa-python"></i>
+                                Python
+                            </span>
 
-                    </div>
+                            <span>
+                                <i class="fas fa-code"></i>
+                                REST APIs
+                            </span>
 
-                </div>
-
-
-                <!-- Tools -->
-                <div class="skill-category">
-
-                    <h4>
-                        Ferramentas
-                    </h4>
-
-                    <div class="skill-list">
-
-                        <span>
-                            <i class="fab fa-git"></i>
-                            Git
-                        </span>
-
-                        <span>
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </span>
-
-                        <span>
-                            <i class="fab fa-docker"></i>
-                            Docker
-                        </span>
-
-                        <span>
-                            <i class="fas fa-cloud"></i>
-                            Vercel
-                        </span>
+                        </div>
 
                     </div>
 
-                </div>
 
+                    <!-- APIS -->
+
+                    <div class="skill-category">
+
+                        <h4>
+                            APIs & Integrações
+                        </h4>
+
+
+                        <div class="skill-list">
+
+                            <span>
+                                <i class="fas fa-film"></i>
+                                TMDB API
+                            </span>
+
+                            <span>
+                                <i class="fas fa-cloud-sun"></i>
+                                OpenWeather API
+                            </span>
+
+                            <span>
+                                <i class="fas fa-map"></i>
+                                Leaflet
+                            </span>
+
+                            <span>
+                                <i class="fas fa-play"></i>
+                                HLS / hls.js
+                            </span>
+
+                            <span>
+                                <i class="fas fa-plug"></i>
+                                API Integration
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATABASE -->
+
+                    <div class="skill-category">
+
+                        <h4>
+                            Banco de Dados
+                        </h4>
+
+
+                        <div class="skill-list">
+
+                            <span>
+                                <i class="fas fa-database"></i>
+                                MySQL
+                            </span>
+
+                            <span>
+                                <i class="fas fa-database"></i>
+                                SQLite
+                            </span>
+
+                            <span>
+                                <i class="fas fa-database"></i>
+                                PostgreSQL
+                            </span>
+
+                            <span>
+                                <i class="fas fa-leaf"></i>
+                                MongoDB
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MOBILE -->
+
+                    <div class="skill-category">
+
+                        <h4>
+                            Mobile
+                        </h4>
+
+
+                        <div class="skill-list">
+
+                            <span>
+                                <i class="fab fa-react"></i>
+                                React Native
+                            </span>
+
+                            <span>
+                                <i class="fas fa-mobile-alt"></i>
+                                Desenvolvimento Mobile
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TOOLS -->
+
+                    <div class="skill-category">
+
+                        <h4>
+                            Ferramentas
+                        </h4>
+
+
+                        <div class="skill-list">
+
+                            <span>
+                                <i class="fab fa-git-alt"></i>
+                                Git
+                            </span>
+
+                            <span>
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </span>
+
+                            <span>
+                                <i class="fab fa-docker"></i>
+                                Docker
+                            </span>
+
+                            <span>
+                                <i class="fas fa-cloud"></i>
+                                Vercel
+                            </span>
+
+                            <span>
+                                <i class="fas fa-terminal"></i>
+                                Vite
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
 
             </div>
 
@@ -546,155 +838,166 @@
 
     </div>
 
-</div>
-
-
 </section>
 
-<!-- Contact Section -->
+
+<!-- =====================================================
+     CONTACT
+====================================================== -->
 
 <section id="contact" class="contact">
 
+    <div class="container">
 
-<div class="container">
-
-    <div class="contact-wrapper">
-
-
-        <div class="contact-content">
-
-            <h2 class="section-title">
-                Vamos Trabalhar Juntos
-            </h2>
-
-            <p class="contact-description">
-                Estou aberto a oportunidades, projetos e colaborações.
-                Se você tem uma ideia ou oportunidade profissional,
-                entre em contato comigo.
-            </p>
-
-        </div>
+        <div class="contact-wrapper">
 
 
-        <form
-            class="contact-form"
-            action="https://formsubmit.co/wallisson.devv@gmail.com"
-            method="POST"
-        >
+            <div class="contact-content">
 
-            <input
-                type="hidden"
-                name="_subject"
-                value="Nova mensagem do portfólio - Wallisson Elizeu"
+                <h2 class="section-title">
+                    Vamos Trabalhar Juntos
+                </h2>
+
+
+                <p class="contact-description">
+
+                    Estou aberto a oportunidades, projetos e
+                    colaborações.
+
+                    <br><br>
+
+                    Se você tem uma ideia, projeto ou oportunidade
+                    profissional, entre em contato comigo.
+
+                </p>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                action="https://formsubmit.co/wallisson.devv@gmail.com"
+                method="POST"
             >
-
-            <input
-                type="hidden"
-                name="_captcha"
-                value="false"
-            >
-
-            <input
-                type="hidden"
-                name="_template"
-                value="table"
-            >
-
-
-            <div class="form-group">
 
                 <input
-                    type="text"
-                    name="name"
-                    placeholder="Seu Nome"
-                    required
+                    type="hidden"
+                    name="_subject"
+                    value="Nova mensagem do portfólio - Wallisson Elizeu"
                 >
-
-            </div>
-
-
-            <div class="form-group">
 
                 <input
-                    type="email"
-                    name="email"
-                    placeholder="Seu Email"
-                    required
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
                 >
 
-            </div>
-
-
-            <div class="form-group">
-
-                <textarea
-                    name="message"
-                    placeholder="Sua Mensagem"
-                    rows="5"
-                    required
-                ></textarea>
-
-            </div>
-
-
-            <button
-                type="submit"
-                class="btn btn-primary"
-            >
-                Enviar Mensagem
-            </button>
-
-        </form>
-
-
-        <div class="contact-info">
-
-            <h3>
-                Outros meios de contato
-            </h3>
-
-
-            <div class="social-links">
-
-                <a
-                    href="https://github.com/wzinn1314"
-                    class="social-link"
-                    title="GitHub"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
                 >
-                    <i class="fab fa-github"></i>
-                </a>
 
 
-                <a
-                    href="https://www.linkedin.com/in/wallisson-elizeu-6a36b4412/"
-                    class="social-link"
-                    title="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Seu Nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Seu Email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <textarea
+                        name="message"
+                        placeholder="Sua Mensagem"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
                 >
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                    Enviar Mensagem
+                </button>
+
+            </form>
 
 
-                <a
-                    href="https://x.com/Wallissondev"
-                    class="social-link"
-                    title="X"
-                    
-                >
-                <i class="fa-brands fa-x-twitter"></i>
-                </a>
+            <div class="contact-info">
+
+                <h3>
+                    Outros meios de contato
+                </h3>
 
 
-                <a
-                    href="mailto:wallisson.devv@gmail.com"
-                    class="social-link"
-                    title="Email"
-                >
-                    <i class="fas fa-envelope"></i>
-                </a>
+                <div class="social-links">
+
+
+                    <a
+                        href="https://github.com/wzinn1314"
+                        class="social-link"
+                        title="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/wallisson-elizeu-6a36b4412/"
+                        class="social-link"
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+
+                    <a
+                        href="https://x.com/Wallissondev"
+                        class="social-link"
+                        title="X"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+
+                    <a
+                        href="mailto:wallisson.devv@gmail.com"
+                        class="social-link"
+                        title="Email"
+                    >
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+
+                </div>
 
             </div>
 
@@ -702,29 +1005,30 @@
 
     </div>
 
-</div>
-
-
 </section>
 
-<!-- Footer -->
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
 
 <footer class="footer">
 
+    <div class="container">
 
-<div class="container">
+        <p>
+            &copy; 2026 Wallisson Elizeu.
+            Todos os direitos reservados.
+        </p>
 
-    <p>
-        &copy; 2026 Wallisson Elizeu.
-        Todos os direitos reservados.
-    </p>
-
-</div>
-
+    </div>
 
 </footer>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+```
+
 </body>
+
 </html>
